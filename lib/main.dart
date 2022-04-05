@@ -19,22 +19,38 @@ class HomePage extends StatelessWidget{
      appBar:AppBar(
        title: Text("My First Flutter App"),
      ) ,
-     body: Container(
-       child: Center(
-         child: Container(
-           padding: const EdgeInsets.all(12),
-           alignment: Alignment.center,
-           width: 150,
-           height: 150,
-           child: Text("My Name Is Niladri",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.bold)),
-           decoration: BoxDecoration(
-             color: Colors.lightGreen,
-             gradient: LinearGradient(colors: [Colors.red,
-             Colors.amber]),
-             // shape:BoxShape.circle
-             borderRadius: BorderRadius.circular(10),
-             boxShadow: [BoxShadow(color: Colors.grey,blurRadius: 11,offset: Offset(2.0,5.0))]
-           ),
+     body: Align(
+       alignment: Alignment.centerLeft,
+       child: Container(
+         color: Colors.black,
+         height: 400,
+         width: 200,
+         child: Column(
+           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+           crossAxisAlignment: CrossAxisAlignment.center,
+           children: <Widget>[
+             Container(
+               padding: const EdgeInsets.all(12),
+               width: 100,
+               height: 100,
+               color: Colors.green,
+
+             ),
+             Container(
+               padding: const EdgeInsets.all(12),
+               width: 100,
+               height: 100,
+               color: Colors.yellow,
+
+             ),
+             Container(
+               padding: const EdgeInsets.all(12),
+               width: 100,
+               height: 100,
+               color: Colors.orange,
+
+             ),
+           ],
          ),
        ),
      ),
